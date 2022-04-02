@@ -46,13 +46,19 @@ header {
 header h1 {
     color: var(--tertiary);
     background-color: var(--secondary);
-    padding: 5px 1% 5px 6%;
+    padding: 0 5vh 0 5vh  ;
     border-radius: 5vh;
     text-align: center;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
     font-weight:bolder;
+
+}
+header h1 span {
+    font-size: .5em;
+    justify-content:space-evenly;
+    align-items: flex-end;
 
 }
 
@@ -142,6 +148,7 @@ main {
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 1.1;
+
 }
 
 .page-section> div {
@@ -157,10 +164,15 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+}
 #work{
     background-image: url(images/sequioa-pic.jpg);
     background-size:contain;
     min-height: 200px; 
+    border-radius: 5vh;
 }
 
 .flex-item {
@@ -223,6 +235,12 @@ main {
     color: var(--secondary);
 }
 
+.jump {
+    background-image: url(images/jump-me.jpg);
+    background-position: center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 .azure-cloud {
     background-image: url(images/azurecloud.jfif);
     background-position: center center;
@@ -265,18 +283,20 @@ main {
     }
 
     header nav {
-        justify-content: center;
+       justify-content: center;
     }
-       .back-video source {
-        flex-basis: 100%;
-        }
-
-.page-section>h2,
-.page-section>div {
-     flex: 0 0 100%;
+    .hero,
+    .back-video source {
+       justify-content: center;
+       text-align: center;
+    }
+    }
+    .page-section>h2,
+    .page-section>div {
+       flex: 0 0 100%;
     }
 
-.page-section>h2 {
+    .page-section>h2 {
         border-right: none;
         border-bottom: 4px solid var(--primary);
         margin-bottom: 20px;
@@ -288,9 +308,7 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    .back-video source {
-        flex-basis: 100%;
-    }
+  
 
     .flex-item,
     .flex-item:first-child {
@@ -300,14 +318,14 @@ main {
     .flex-item:first-child {
         min-height: 150px;
     }
-
-    .hero-banner {
-        justify-content: center;
-        text-align: center;
-    }
-
     .contact address {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen {
+    .back-video source {
+    flex-basis: 100%;
     }
 }
