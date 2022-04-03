@@ -268,7 +268,7 @@ main {
 
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
     header {
         padding: 0 0 10px 0;
         justify-content: center;
@@ -306,7 +306,7 @@ main {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 630px) {
 
   
 
@@ -324,8 +324,3 @@ main {
     }
 }
 
-@media screen {
-    .back-video source {
-    flex-basis: 100%;
-    }
-}
